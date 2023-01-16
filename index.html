@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill the survey form</p>
+      <div class="form-container">
+        <form action="" id="survey-form">
+          <div class="flex">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              value="Bryan"
+              id="name"
+              placeholder="Enter Name"
+              required />
+          </div>
+          <div class="flex">
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="email"
+              name=""
+              id="email"
+              value="azanorbryan@gmail.com"
+              placeholder="Enter your email"
+              required />
+          </div>
+          <div class="flex">
+            <label for="number" id="number-label">Number</label>
+            <input
+              type="number"
+              id="number"
+              max="100"
+              min="8"
+              placeholder="Enter a Number" />
+          </div>
+          <div class="flex">
+            <label for="dropdown" id="dropdown-label">Gender</label>
+            <select name="" id="dropdown">
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+          </div>
+          <div class="flex">
+            <p>Select Your Gender</p>
+            <div class="input-group">
+              <input type="radio" name="gender" id="male" value="Male" />
+              <label for="male">Male</label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="gender" id="female" value="Female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="flex">
+            <p>Select Your Preferred Languages</p>
+            <div class="input-group">
+              <input type="checkbox" name="options" id="html" value="html" />
+              <label for="html">HTM</label>
+            </div>
+            <div class="input-group">
+              <input type="checkbox" name="options" id="css" value="css" />
+              <label for="css">CSS</label>
+            </div>
+            <div class="input-group">
+              <input type="checkbox" name="options" id="js" value="js" />
+              <label for="js">JavaScript</label>
+            </div>
+          </div>
+          <div class="flex">
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+              placeholder="comments ..."></textarea>
+          </div>
+          <div class="flex">
+            <button type="submit" id="submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
