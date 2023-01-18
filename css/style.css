@@ -42,6 +42,10 @@ body {
   overflow: hidden;
 }
 
+.input-group label {
+  margin-left: 10px;
+}
+
 .survey-form ul label {
   font-size: 18px;
   font-weight: bold;
@@ -51,10 +55,6 @@ body {
   display: flex;
   align-items: center;
   margin: 5px 0;
-}
-
-.input-group label {
-  margin-left: 10px;
 }
 
 input[type='text'],
