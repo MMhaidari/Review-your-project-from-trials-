@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.survey-form {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px gray;
+  overflow: hidden;
+}
+
+.input-group label {
+  margin-left: 10px;
+}
+
+.survey-form ul label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+select,
+textarea {
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  width: 500px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.submit {
+  padding: 15px;
+  border-radius: 10px;
+  width: 500px;
+  border: none;
+  background: #236272;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.submit:hover {
+  background: #3495ad;
+}
+
+@media (max-width: 768px) {
+  input[type='text'],
+  input[type='number'],
+  input[type='email'],
+  select,
+  .submit,
+  textarea {
+    width: 95%;
+  }
+}
