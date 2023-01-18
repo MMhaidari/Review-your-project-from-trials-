@@ -1,6 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  /* background: #a5a5a5;
-    color: #fff; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,11 +13,11 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+.title {
   text-align: center;
 }
 
-#description {
+.description {
   text-align: center;
   font-size: 20px;
 }
@@ -29,7 +33,7 @@ h1 {
   justify-content: center;
 }
 
-form {
+.survey-form {
   box-sizing: border-box;
   padding: 20px;
   background-color: #d1d1d1;
@@ -38,7 +42,7 @@ form {
   overflow: hidden;
 }
 
-label {
+.survey-form ul label {
   font-size: 18px;
   font-weight: bold;
 }
@@ -66,7 +70,7 @@ textarea {
   font-size: 18px;
 }
 
-#submit {
+.submit {
   padding: 15px;
   border-radius: 10px;
   width: 500px;
@@ -79,7 +83,7 @@ textarea {
   transition: all 0.4s ease-in-out;
 }
 
-#submit:hover {
+.submit:hover {
   background: #3495ad;
 }
 
@@ -88,7 +92,7 @@ textarea {
   input[type='number'],
   input[type='email'],
   select,
-  #submit,
+  .submit,
   textarea {
     width: 95%;
   }
